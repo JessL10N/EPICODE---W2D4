@@ -1,0 +1,270 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, img {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    -webkit-text-size-adjust: none;
+}
+
+button {
+    background-color: initial;
+    border: none;
+    cursor: pointer;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.twitterSection a {
+    text-decoration: underline;
+    color: grey;
+}
+
+/* Qui iniziano i nostri stili */
+
+a, h2, p, ul, h3, button {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainPage, article, aside, .twitterSection, .peopleElement, header, .headerButtons, h3, nav, .articleText, .articleText ul, .list, .listButtons, .pills, .peopleNames {
+    display: flex;
+    }
+
+img {
+    max-width: 50px;
+}
+
+img:not(.articleBottom) {
+    display: block;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+header {
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid gray;
+}
+
+.headerButtons {
+    width: 25%;
+    height: 10%;
+    justify-content: space-evenly;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.3em;
+    font-weight: 600;
+    justify-content: flex-start;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+button {
+    padding: 0.5rem;
+    border: black solid 1px;
+    border-radius: 2rem;
+}
+
+nav {
+    border-bottom: 1px solid gray;
+    padding-bottom: 0.1rem;
+    margin: 5rem;
+}
+
+nav .tabs {
+    margin: 3rem 2rem 0.5rem;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+nav .tabs span {
+    color: rgb(175, 175, 175);
+}
+
+aside {
+    flex-direction: column;
+    width: 30%;
+    height: 1000px;
+    align-items: center;
+}
+
+main {
+    border-right: 1px solid grey;
+    width: 70%;
+    height: 1000px;
+    padding: 3rem 2rem;
+}
+
+article {
+    margin: 5rem;
+}
+
+.articleText {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    margin-right: 2rem;
+}
+
+.articleElement {
+    color: gray;
+}
+
+.articleText ul {
+    justify-content: space-between;
+    width: 300px;
+    list-style-type: none;
+    color: gray;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.list {
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.listButtons {
+    justify-content: flex-end;
+    flex-basis: 25%;
+    width: 200px;
+    height: 25px;    
+}
+
+.articleBottom {
+    padding-left: 0.5rem;
+    padding-right: 1rem;
+    width: 100%;
+}
+
+.topic {
+    background-color: lightgray;
+    border-radius: 30%;
+    padding: 0 0.3rem;
+}
+
+.articleImg  {
+    width: 20%;
+    height: 200px;
+    background-color: black;
+}
+
+.articleLable {
+    display: inline-block;
+    font-weight: 200;    
+}
+
+.articleIcon {
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.twitterSection, .recommendedSection, .peopleSection {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    width: 90%;
+    padding: 2rem 0;
+    border-bottom: 1px solid gray;
+}
+
+.mediumTwitter {
+    background-color: black;
+    width: 200px;
+    height: 50px;
+}
+
+.twitterSection > * {
+    margin: 1rem;
+}
+
+/*significa che deve assegnare a tutti i child di twitterSection un margine da 1rem */
+
+.pills {
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.pill{
+    margin: 0.3rem;
+    padding: 10px;
+    background-color: rgb(236, 236, 236);
+    border: none;
+}
+.peopleImg  {
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.peopleElement {
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1rem;
+}
+
+.peopleElement button {
+    width: 70px;
+}
+
+.peopleNames {
+    flex: 1 0 auto;
+    align-items: start;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.peopleNames p:first-of-type {
+    font-weight: 600;
+}
